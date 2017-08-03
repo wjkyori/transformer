@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.transformer</groupId>
+		<artifactId>parent</artifactId>
+		<version>0.0.1-RELEASE</version>
+	</parent>
+	<artifactId>transformer-install</artifactId>
+	<packaging>pom</packaging>
+	<name>transformer-install</name>
+	<modules>
+		<module>../transformer-util</module>
+		<module>../transformer-dao-jpa-support</module>
+		<module>../transformer-service-support</module>
+		<module>../transformer-web-support</module>
+		<module>../transformer-dubbo-support</module>
+		<module>../transformer-rpc-support</module>
+		<module>../transformer-common</module>
+	</modules>
+</project>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.transformer</groupId>
+		<artifactId>parent</artifactId>
+		<version>0.0.1-RELEASE</version>
+	</parent>
+	<artifactId>transformer-dao-jpa-support</artifactId>
+	<packaging>jar</packaging>
+	<name>transformer-dao-jpa-support</name>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.transformer</groupId>
+			<artifactId>transformer-util</artifactId>
+		</dependency>
+		
+		<!-- PERSISTENCE begin -->
+		<dependency>
+        	<groupId>org.springframework.boot</groupId>
+       		<artifactId>spring-boot-starter-data-jpa</artifactId>
+    	</dependency>
+		<!-- PERSISTENCE end -->
+		
+		<!-- mysql -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+		</dependency>
+		<!-- mysql end -->
+		
+		<!-- datasource -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>druid</artifactId>
+		</dependency>
+		<!-- datasource -->
+	</dependencies>
+
+	<build>
+		<plugins>
+			<!-- eclipse plugin -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-eclipse-plugin</artifactId>
+				<configuration>
+					<wtpversion>none</wtpversion>
+				</configuration>
+			</plugin>
+			<!-- source attach plugin -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>
